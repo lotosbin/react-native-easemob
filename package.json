@@ -1,0 +1,22 @@
+{
+  "name": "react-native-easemob",
+  "version": "0.0.9",
+  "description": "the easemob util",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "react-native-easemob"
+  ],
+  "author": {
+    "name": "demonhunter888"
+  },
+  "license": "ISC",
+  "readme": "# react-native-easemob    \r\n\r\n\r\n\r\nnpm install react-native-easemob     \r\n\r\nvar easemob = require('react-native-easemob');      \r\n\r\n\r\n\r\n//��¼     \r\n\r\n\r\n Login(String username,String pwd,Callback successCallback,Callback errorCallback)  \r\n\r\n\r\neasemob.Login(\"zhang\",\"123456\",(success)=>{   \r\n    alert(msg);    \r\n  },(error)=>{    \r\n    alert(errorMsg)    \r\n});  \r\n\r\n//�����˺�  \r\n\r\n Create(String username,String pwd,Callback successCallback,Callback errorCallback)  \r\n\r\neasemob.Create(\"zhang\",\"123456\",(success)=>{  \r\n\r\n    alert(msg);  \r\n\r\n  },(error)=>{  \r\n\r\n    alert(errorMsg)  \r\n\r\n});  \r\n\r\n//�����绰   \r\n\r\nCall(String username)   \r\n\r\neasemob.Call(\"zhang\"��;   \r\n\r\n//�ش�    \r\n\r\nAnswer    \r\n\r\neasemob.Answer����;    \r\n\r\n//�Ҷ�    \r\n\r\neasemob.endCall����;    \r\n\r\n//ע��ʵʱͨ������    \r\n\r\nInitim    \r\n\r\neasemob.Initim����;    \r\n\r\n//�ܾ�����   \r\n\r\nReject    \r\n\r\neasemob.Reject����;   \r\n\r\n\r\n//ͨ��״̬����    \r\n\r\nStateChangeListener(Callback CONNECTING,Callback CONNECTED,Callback ACCEPTED,Callback DISCONNNECTED)    \r\n\r\neasemob.StateChangeListener(    \r\n\r\n(CONNECTING)=>{alert('CONNECTING');},    \r\n\r\n(CONNECTED)=>{alert('CONNECTED');},    \r\n\r\n(ACCEPTED)=>{alert('ACCEPTED');},    \r\n\r\n(DISCONNNECTED)=>{alert('DISCONNNECTED');},    \r\n\r\n);    \r\n\r\n//ע����������Ϣ�ļ����㲥    \r\n\r\nNewMessage    \r\n\r\neasemob.NewMessage����;    \r\n\r\n\r\n//�����ı���Ϣ������    \r\n\r\nSendText(String username,String content,Callback successCallback,Callback errorCallback)    \r\n\r\neasemob.SendText��'zhang','aaaaaaaa',    \r\n\r\n(success)=>{alert('CONNECTING');},    \r\n\r\n(err)=>{alert('CONNECTING');},    \r\n\r\n��;    \r\n\r\n\r\n//����������Ϣ     \r\n\r\nSendVoice(String username,String filePath,int len,Callback successCallback,Callback errorCallback)    \r\n\r\neasemob.SendVoice��'zhang','c://aaaaaaaa.mp4',3,    \r\n\r\n(success)=>{alert(success);},    \r\n\r\n(err)=>{alert(err);},   \r\n\r\n��;    \r\n\r\n\r\n//����ͼƬ��Ϣ     \r\n\r\nSendImage(String username,String filePath,Callback successCallback,Callback errorCallback)    \r\n\r\neasemob.SendImage��'zhang','c://aaaaaaaa.jpg',    \r\n\r\n(success)=>{alert(success);},  \r\n\r\n(err)=>{alert(err);},    \r\n\r\n��;    \r\n\r\n \r\n//���͵���λ����Ϣ     \r\n\r\nSendLocation(String username,String locationAddress,Double latitude,Double longitude,Callback successCallback,Callback errorCallback)     \r\n\r\neasemob.SendLocation��'zhang','aaa',45.54645,64.4564     \r\n\r\n(success)=>{alert(success);},    \r\n\r\n(err)=>{alert(err);},    \r\n\r\n��;     \r\n\r\n\r\n//�����ļ���Ϣ     \r\n\r\nSendFile(String username,String filePath,Callback successCallback,Callback errorCallback)    \r\n\r\neasemob.SendFile��'zhang','c://aaa',    \r\n\r\n(success)=>{alert(success);},    \r\n\r\n(err)=>{alert(err);},    \r\n\r\n��;   \r\n\r\n\r\n",
+  "readmeFilename": "README.md",
+  "_id": "react-native-easemob@0.0.5",
+  "_shasum": "ad0c1a391c56072f967f78a12947c2cc97952264",
+  "_from": "react-native-easemob@*"
+}
