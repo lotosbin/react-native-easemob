@@ -1,16 +1,17 @@
 # react-native-easemob    
 
 
-
+```
 npm install react-native-easemob     
-
+```
 
 
 在seettings.gradle中设置
+```
 include ':app',':react-native-easemob'  
 project(':react-native-easemob').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-easemob/android')
-
-
+```
+```
 onCreate   
 EMChat.getInstance().init(getApplicationContext());   
 
@@ -20,7 +21,7 @@ new HXPackage()
 
 
 
-    
+
 
 import  EasemobLibrary from 'react-native-easemob';  
 var Emitter = require('RCTDeviceEventEmitter');  
@@ -117,7 +118,7 @@ Emitter.addListener(EasemobEvent.CONNNECTERR, () => {
   this.setState({"callState":"拨打电话失败"});  
 })  
 
- 
+
 
 //注册接收新消息的监听广播    
 
@@ -164,7 +165,7 @@ easemob.SendImage（'zhang','c://aaaaaaaa.jpg',
 
 ）;    
 
- 
+
 //发送地理位置消息     
 
 SendLocation(String username,String locationAddress,Double latitude,Double longitude,Callback successCallback,Callback errorCallback)     
@@ -189,5 +190,7 @@ easemob.SendFile（'zhang','c://aaa',
 (err)=>{alert(err);},    
 
 ）;   
+```
 
-
+# Samples
+https://github.com/lotosbin/react-native-easemob-sample
